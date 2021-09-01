@@ -141,7 +141,7 @@ void List<T>::pop_back(){
         return pop_front();
     }
     else if(m_size > 1) {
-        ListNode<T>* p_preDeleted;
+        ListNode<T>* p_preDeleted = head;
 
         while(p_preDeleted->next->next != nullptr){
             p_preDeleted = p_preDeleted->next;
